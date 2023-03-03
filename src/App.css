@@ -2,37 +2,108 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  background-color: #373737;   
+  width: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: rgb(186, 184, 184);
+  width: 8px;
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar {
+  background-color: rgb(30, 30, 30);
+  height: 60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 5px rgb(44, 44, 44);
+}
+
+.search-bar {
+  outline: none;
+  border: none;
+  height:32px;
+  border-radius: 4px;
+  width: 350px;
+  box-shadow: 0 0 3px #c6c5c5;
+  background-color: #dbdbdb;
+  padding-left: 10px;
+  color: #414141;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.button-bar {
+  height:34px;
+  outline: none;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 3px #c6c5c5;
+  background-color: #dbdbdb;
+}
+
+.App-content {
+  background-color: #d2d2d2;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gif-container {  
+  background-color: #373737;    
+  width: 75%;
+  box-shadow: 0 0 7px #494646;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gif-image {
+  border-radius: 3px;
+  box-shadow: 0 0 15px #282c34;
+  margin: 20px;
+  object-fit: cover;
+  width: 280px;
+  display: block;
+  display:inline-block;
+  height: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer {
+  height: 45px;
+  width: 100%;
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  align-items: center;
+}
+
+.footer-text-1 {
+  color: #37393e;
+  margin-left: 13px;
+}
+
+.footer-text-2 {
+  color: #595959;
+  margin-left: 8px;
 }
