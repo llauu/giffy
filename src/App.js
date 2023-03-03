@@ -17,9 +17,8 @@ function App() {
   const search = (e) => {
     if (e.target.value.length >= 3) {
       setSearchValue(e.target.value);
-    }
-    else {
-      if(e.target.value === '') {
+    } else {
+      if (e.target.value === '') {
         setSearchValue('random');
       }
     }
@@ -38,7 +37,7 @@ function App() {
       </nav>
       <section className='App-content'>
         <div className='gif-container'>
-          <ListOfGifs keyword={searchValue}/>
+          <ListOfGifs keyword={searchValue} />
         </div>
       </section>
     </div>
